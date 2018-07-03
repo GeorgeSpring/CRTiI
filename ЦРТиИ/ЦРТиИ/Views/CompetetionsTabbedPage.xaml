@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ЦРТиИ.Views.CompetetionsTabbedPage" Title="Конкурсы">
+  <!--Pages can be added as references or inline-->
+    <ContentPage Title="Конкурсы">
+        <ListView x:Name="CompetitionsListView" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Label Margin="15,0,15,0" Text="{Binding Name}" VerticalOptions="FillAndExpand" Grid.Row="0"/>
+                            <Label Margin="15,0,15,0" Text="{Binding DescriptionShort}" VerticalOptions="FillAndExpand" Grid.Row="1"/>
+                            <Label Margin="15,0,15,0" Text="{Binding Category}" VerticalOptions="FillAndExpand" Grid.Row="2"/>
+                            <StackLayout Orientation="Horizontal" Grid.Row="3" Margin="15,0,15,0">
+                                <Image HeightRequest="22" WidthRequest="22" Source="date.png"/>
+                                <Label Text="{Binding StartDate}" VerticalOptions="FillAndExpand"/>
+                            </StackLayout>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage>
+  <ContentPage Title="Tab 2" />
+</TabbedPage>
