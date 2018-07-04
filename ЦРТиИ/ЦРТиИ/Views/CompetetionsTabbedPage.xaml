@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ЦРТиИ.Views.CompetetionsTabbedPage" Title="Конкурсы">
   <!--Pages can be added as references or inline-->
-    <ContentPage Title="Конкурсы">
+    <ContentPage Title="Конкурсы" Icon="logo.png">
         <ListView x:Name="CompetitionsListView" HasUnevenRows="True">
             <ListView.ItemTemplate>
                 <DataTemplate>
