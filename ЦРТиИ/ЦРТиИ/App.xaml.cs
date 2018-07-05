@@ -30,5 +30,10 @@ namespace ЦРТиИ
 		{
 			// Handle when your app resumes
 		}
-	}
+        public static void TappedItem(object sender, ItemTappedEventArgs e)
+        {
+            if (e == null) return;
+            ((Xamarin.Forms.ListView)sender).SelectedItem = null;
+        }
+    }
 }
