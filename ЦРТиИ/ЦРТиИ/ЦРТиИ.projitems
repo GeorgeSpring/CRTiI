@@ -22,8 +22,8 @@
       <DependentUpon>CompetetionDetail.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Views\CompetetionsTabbedPage.xaml.cs">
-      <DependentUpon>CompetetionsTabbedPage.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ComptetetionListView.xaml.cs">
+      <DependentUpon>ComptetetionListView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\LoginPage.xaml.cs">
@@ -41,13 +41,13 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\CompetetionsTabbedPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\CompetetionDetail.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\CompetetionDetail.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ComptetetionListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
