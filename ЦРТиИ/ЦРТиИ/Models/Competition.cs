@@ -18,7 +18,7 @@ namespace ЦРТиИ.Models
         public DateTime EndDate { get; set; }
         public List<string> AgeСategories { get; set; }
         public List<Nomination> Nominations { get; set; }
-        public List<File> AttachedFiles { get; set; }
+        public File AttachedFiles { get; set; }
     }
 
     public class File
